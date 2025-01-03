@@ -1,0 +1,77 @@
+nav {
+  flex-direction: column;
+  padding: 1rem 1rem 0 1rem;
+  text-align: center;
+}
+
+nav .logo img {
+  height: 2rem;
+}
+
+nav ul {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-links {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  flex-direction: column;
+  padding: 1rem 0;
+  gap: 0.5rem;
+  display: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-toggle {
+  display: block;
+}
+
+.nav-toggle img {
+  transition: transform 0.3s ease;
+}
+
+.nav-toggle.rotate img {
+  transform: rotate(180deg);
+}
+
+nav ul li {
+  text-align: center;
+}
+
+.hero-message {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+.scroll-btn img {
+  width: 30px;
+}
+
+.dresses-section h2 {
+  font-size: 1.8rem;
+}
+
+.dresses-section p {
+  font-size: 1rem;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0.5rem;
+}
