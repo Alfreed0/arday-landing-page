@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Yussani dress",
+    "price": 83.00,
+    "description": "Vestido tipo corset con detalle al sesgo y tablones en el busto, diseño de espalda con tiras tejidas y una falda recta con abertura en la pierna, incluye un forro para mejor estetica.",
+    "images": [
+      "../assets/media/dresses/yussani_dress/yussani_dress_01.jpg",
+      "../assets/media/dresses/yussani_dress/yussani_dress_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
+    "colors": ["Black", "Red", "Navy"]
+  },
+  {
+    "id": 2,
+    "name": "Samira",
+    "price": 100.00,
+    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "images": [
+      "../assets/media/dresses/samira/samira_01.jpg",
+      "../assets/media/dresses/samira/samira_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
+    "colors": ["Black", "Red", "Navy"]
+  },
+  {
+    "id": 3,
+    "name": "Samira",
+    "price": 100.00,
+    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "images": [
+      "../assets/media/dresses/samira/samira_01.jpg",
+      "../assets/media/dresses/samira/samira_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
+    "colors": ["Black", "Red", "Navy"]
+  },
+  {
+    "id": 4,
+    "name": "Samira",
+    "price": 100.00,
+    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "images": [
+      "../assets/media/dresses/samira/samira_01.jpg",
+      "../assets/media/dresses/samira/samira_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
+    "colors": ["Black", "Red", "Navy"]
+  },
+  {
+    "id": 5,
+    "name": "Samira",
+    "price": 100.00,
+    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "images": [
+      "../assets/media/dresses/samira/samira_01.jpg",
+      "../assets/media/dresses/samira/samira_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
+    "colors": ["Black", "Red", "Navy"]
+  },
+  {
+    "id": 6,
+    "name": "Samira",
+    "price": 100.00,
+    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "images": [
+      "../assets/media/dresses/samira/samira_01.jpg",
+      "../assets/media/dresses/samira/samira_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
+    "colors": ["Black", "Red", "Navy"]
+  },
+  {
+    "id": 7,
+    "name": "Samira",
+    "price": 100.00,
+    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "images": [
+      "../assets/media/dresses/samira/samira_01.jpg",
+      "../assets/media/dresses/samira/samira_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
+    "colors": ["Black", "Red", "Navy"]
+  },
+  {
+    "id": 8,
+    "name": "Samira",
+    "price": 100.00,
+    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "images": [
+      "../assets/media/dresses/samira/samira_01.jpg",
+      "../assets/media/dresses/samira/samira_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
+    "colors": ["Black", "Red", "Navy"]
+  },
+  {
+    "id": 9,
+    "name": "Samira",
+    "price": 100.00,
+    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "images": [
+      "../assets/media/dresses/samira/samira_01.jpg",
+      "../assets/media/dresses/samira/samira_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
+    "colors": ["Black", "Red", "Navy"]
+  },
+  {
+    "id": 10,
+    "name": "Samira",
+    "price": 100.00,
+    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "images": [
+      "../assets/media/dresses/samira/samira_01.jpg",
+      "../assets/media/dresses/samira/samira_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
+    "colors": ["Black", "Red", "Navy"]
+  }
+]
