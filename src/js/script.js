@@ -7,10 +7,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-function scrollToDresses() {
-  document.querySelector('.dresses-section').scrollIntoView({ behavior: 'smooth' });
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
@@ -25,6 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const content = document.getElementById('content');
 
   function loadPage(page) {
+    if (page === 'index.html') {
+      window.location.href = 'index.html';
+      return;
+    }
+
       fetch(page)
           .then(response => {
               if (!response.ok) {
@@ -34,7 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
           })
           .then(data => {
               content.innerHTML = data;
-              history.pushState({ page }, '', `#${page.replace('.html', '')}`); 
+              history.pushState({ page }, '', `#${page.replace('.html', '')}`);
+
+              if (page === 'catalogue.html') {
+                fetch('../assets/jsons/dresses.json')
+                  .then(response => response.json())
+                  .then(jsonData => {
+                    dresses = jsonData;
+                    loadCatalogue(dresses);
+                  })
+                  .catch(error => console.error('Error loading JSON:', error));
+              }
           })
           .catch(error => {
               console.error('Error loading page:', error);
@@ -54,7 +65,49 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.state && e.state.page) {
           loadPage(e.state.page);
       } else {
-          loadPage('index.html');
+        window.location.href = 'index.html';
       }
   });
 });
+
+function loadCatalogue(jsonData) {
+  const catalogueContainer = document.querySelector(".catalogue-container");
+  catalogueContainer.innerHTML = "";
+
+  jsonData.forEach((item) => {
+    const catalogueItem = document.createElement("div");
+    catalogueItem.className = "carousel-item";
+
+    const imageDiv = document.createElement("div");
+    imageDiv.className = "carousel-image";
+    
+    const img = document.createElement("img");
+    img.src = item.images[0];
+    img.alt = item.name;
+    img.className = "carousel-img";
+    img.onclick = () => loadDressPage(item);
+
+    const verOverlay = document.createElement("div");
+    verOverlay.className = "ver-overlay";
+    verOverlay.textContent = "ver";
+    verOverlay.onclick = () => loadDressPage(item);
+
+    imageDiv.appendChild(img);
+    imageDiv.appendChild(verOverlay);
+
+    const nameDiv = document.createElement("div");
+    nameDiv.className = "carousel-name";
+    nameDiv.textContent = item.name;
+
+    const priceDiv = document.createElement("div");
+    priceDiv.className = "carousel-price";
+    priceDiv.textContent = `$${item.price}`;
+
+    catalogueItem.appendChild(imageDiv);
+    catalogueItem.appendChild(nameDiv);
+    catalogueItem.appendChild(priceDiv);
+
+    catalogueContainer.appendChild(catalogueItem);
+  });
+}
+

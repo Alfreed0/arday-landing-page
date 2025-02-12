@@ -1,35 +1,27 @@
-import './script.js';
-import './carousel.js';
+function sendWhatsAppMessage() {
+  const dressName = document.getElementById("dress-name")?.textContent.trim();
+  const dressPrice = document.getElementById("dress-price")?.textContent.trim();
+  const selectedSize = document.getElementById("size-select")?.value;
+  const selectedColor = document.getElementById("color-select")?.value;
 
-window.onload = function () {
-  const dress = JSON.parse(sessionStorage.getItem("selectedDress"));
-  if (!dress) return;
+  if (!dressName || !dressPrice) {
+    console.error("Missing dress name or price!");
+    return;
+  }
 
-  document.getElementById("dress-description").textContent = dress.description;
-  document.getElementById("dress-price").textContent = `$${dress.price}`;
+  const phoneNumber = "593963145123";
 
-  const sizeSelect = document.getElementById("size-select");
-  dress.sizes.forEach(size => {
-    const option = document.createElement("option");
-    option.textContent = size;
-    sizeSelect.appendChild(option);
-  });
+  const message = `Hola, estoy interesada en este vestido:
+  ⭐ *${dressName}*
+  💲 Precio: ${dressPrice}
+  📏 Talla: ${selectedSize}
+  🎨 Color: ${selectedColor}
 
-  const colorSelect = document.getElementById("color-select");
-  dress.colors.forEach(color => {
-    const option = document.createElement("option");
-    option.textContent = color;
-    colorSelect.appendChild(option);
-  });
+  ¿Me puedes ayudar con más información?`;
 
-  const bigImage = document.getElementById("big-image");
-  bigImage.src = dress.images[0];
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
-  const smallImagesContainer = document.querySelector(".small-images");
-  dress.images.forEach(image => {
-    const img = document.createElement("img");
-    img.src = image;
-    img.onclick = () => (bigImage.src = image);
-    smallImagesContainer.appendChild(img);
-  });
-};
+  console.log("Opening WhatsApp:", whatsappURL);
+  window.open(whatsappURL, "_blank");
+}

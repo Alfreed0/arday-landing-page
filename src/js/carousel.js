@@ -1,23 +1,26 @@
-const carouselContainer = document.querySelector(".carousel-container");
 const leftButton = document.querySelector(".carousel-btn.left");
 const rightButton = document.querySelector(".carousel-btn.right");
+const carousel = ".carousel-container";
+const catalogue = ".catalogue-container";
 
 let currentIndex = 0;
 let autoMoveInterval;
 
 fetch('../assets/jsons/dresses.json')
-  .then(response => response.json())
-  .then(jsonData => {
-    dresses = jsonData;
-    loadCarousel(dresses);
-    startAutoMove();
-  })
-  .catch(error => console.error('Error loading JSON:', error));
+.then(response => response.json())
+.then(jsonData => {
+  dresses = jsonData;
+  loadCarousel(dresses, carousel);
+  loadCarousel(dresses, catalogue);
+  startAutoMove();
+})
+.catch(error => console.error('Error loading JSON:', error));
 
 const visibleItems = 5;
 const itemWidth = 17;
 
-function loadCarousel(jsonData) {
+function loadCarousel(jsonData, container) {
+  const carouselContainer = document.querySelector(container);
   jsonData.forEach((item) => {
     const carouselItem = document.createElement("div");
     carouselItem.className = "carousel-item";

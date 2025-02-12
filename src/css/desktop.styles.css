@@ -29,6 +29,8 @@
 body {
   margin: 0;
   font-family: 'Nesans Semi', sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
 nav {
@@ -237,30 +239,218 @@ footer {
   right: 0;
 }
 
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .product-details {
   display: flex;
+  padding: 2rem;
   gap: 2rem;
 }
 
-.images-section {
-  width: 50%;
+.product-images {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-start;
   gap: 1rem;
 }
 
 #big-image {
-  width: 100%;
-  height: auto;
+  width: 25rem;
+  height: 40rem;
+  object-fit: cover;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.small-images {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .small-images img {
   width: 3rem;
-  height: auto;
+  height: 4rem;
+  object-fit: cover;
   cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .small-images img:hover {
   opacity: 0.7;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+
+.product-info h2 {
+  margin: 0;
+}
+
+.product-info h3 {
+  margin: 0.5rem 0;
+}
+
+select {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  font-family: 'Nesans Semi', sans-serif;
+  font-size: 1rem;
+}
+
+#dress-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#ws-button {
+  background: #000;
+  color: white;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  font-family: 'Nesans Semi', sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.catalogue-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.about-us {
+  font-family: 'Carena', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #E1A0A4;
+}
+
+.caption {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.about-us-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 30rem;
+}
+
+.about-us-section p {
+  line-height: 2;
+  font-size: 1rem;
+  text-align: start;
+}
+
+.delivery-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delivery > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.delivery, .purchase {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-bottom: 2rem;
+}
+
+.delivery div:first-child {
+  color: white;
+  background-color: #E1A0A4;
+  padding: 2rem;
+}
+
+.delivery div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delivery h1 {
+  font-family: 'Carena', sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.delivery div:first-child p {
+  font-size: 1.5rem;
+}
+
+.purchase > div {
+  flex: 1;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.purchase > div:first-child {
+  align-items: flex-end;
+}
+
+.purchase > div:first-child > div:first-child {
+  position: relative;
+  width: 30rem;
+  height: 50rem;
+}
+
+.purchase > div:last-child > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10rem;
+}
+
+.purchase .image-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #665546;
+  left: -20px;
+  bottom: -20px;
+  z-index: 0;
+}
+
+.purchase img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.purchase h1 {
+  font-family: 'Carena', sans-serif;
+  font-size: 2rem;
+  color: #E8B88F;
+  margin: 0;
+}
+
+.purchase p {
+  line-height: 2;
 }
