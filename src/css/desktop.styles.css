@@ -320,10 +320,35 @@ select {
   margin-top: 1rem;
 }
 
+.catalogue {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+
+.filters-container ul {
+  width: 100%;
+}
+
+.stock li a, .categories li a {
+  text-decoration: none;
+}
+
+.filters-container {
+  padding-left: 5rem;
+  width: 10rem;
+}
+
 .catalogue-container {
+  width: calc(100% - 15rem);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 2rem;
   padding: 2rem;
 }
@@ -382,6 +407,13 @@ select {
   color: white;
   background-color: #E1A0A4;
   padding: 2rem;
+}
+
+.delivery div:first-child > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .delivery div:last-child {
@@ -454,3 +486,92 @@ select {
 .purchase p {
   line-height: 2;
 }
+
+.sizes, .sizes-container {
+  width: 100%;
+}
+
+.sizes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sizes-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Carena', sans-serif;
+  color: #9C816A;
+}
+
+.sizes-container div:first-child {
+  width: 40rem;
+}
+
+.sizes-container button, .handmade button {
+  background: #9C816A;
+  padding: 1rem 2rem;
+  border: 1px solid #9C816A;
+  color: white;
+  cursor: pointer;
+  font-family: 'Nesans Semi', sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background 0.1s ease-in-out;
+}
+
+.sizes-container button:hover, .handmade button:hover {
+  background: white;
+  color: #9C816A;
+}
+
+.handmade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 20rem;
+}
+
+.handmade h1, .frequent-questions h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Carena', sans-serif;
+}
+
+.handmade p, .frequent-questions > div:first-child p {
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 2;
+}
+
+.frequent-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 20rem;
+}
+
+.frequent-questions h1 {
+  color: #BA87AF;
+  text-align: center;
+}
+
+.fq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.fq-grid h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #E1A0A4;
+  font-family: 'Carena', sans-serif;
+}
+
+.fq-grid p {
+  line-height: 2;
+}
+
+

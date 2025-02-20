@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+let dresses = [];
+let activeTypeFilter = null;
+let activeStockFilter = null;
+
 document.addEventListener('DOMContentLoaded', () => {
   const content = document.getElementById('content');
 
@@ -43,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   .then(jsonData => {
                     dresses = jsonData;
                     loadCatalogue(dresses);
+                    setupFilters();
                   })
                   .catch(error => console.error('Error loading JSON:', error));
               }
@@ -109,5 +114,58 @@ function loadCatalogue(jsonData) {
 
     catalogueContainer.appendChild(catalogueItem);
   });
+}
+
+function setupFilters() {
+  const categoryLinks = document.querySelectorAll(".categories li a");
+  const stockLinks = document.querySelectorAll(".stock li a");
+
+  categoryLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      const type = link.getAttribute("data-type");
+
+      if (type === "all") {
+        activeTypeFilter = null;
+      } else {
+        activeTypeFilter = type;
+      }
+
+      applyFilters();
+    });
+  });
+
+  stockLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      const stockType = link.getAttribute("data-stock");
+
+      if (stockType === "all") {
+        activeStockFilter = null;
+      } else {
+        activeStockFilter = true;
+      }
+
+      applyFilters();
+    });
+  });
+}
+
+function applyFilters() {
+  let filteredDresses = dresses;
+
+  if (activeStockFilter !== null) {
+    filteredDresses = filteredDresses.filter(
+      (dress) => dress.in_stock === activeStockFilter
+    );
+  }
+
+  if (activeTypeFilter !== null) {
+    filteredDresses = filteredDresses.filter(
+      (dress) => dress.type === activeTypeFilter
+    );
+  }
+
+  loadCatalogue(filteredDresses);
 }
 

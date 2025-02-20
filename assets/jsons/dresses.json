@@ -9,7 +9,9 @@
       "../assets/media/dresses/yussani_dress/yussani_dress_02.jpg"
     ],
     "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"]
+    "colors": ["Black", "Red", "Navy"],
+    "type": "long_dress",
+    "in_stock": true
   },
   {
     "id": 2,
@@ -21,7 +23,9 @@
       "../assets/media/dresses/samira/samira_02.jpg"
     ],
     "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"]
+    "colors": ["Black", "Red", "Navy"],
+    "type": "long_dress",
+    "in_stock": false
   },
   {
     "id": 3,
@@ -33,7 +37,9 @@
       "../assets/media/dresses/samira/samira_02.jpg"
     ],
     "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"]
+    "colors": ["Black", "Red", "Navy"],
+    "type": "short_dress",
+    "in_stock": true
   },
   {
     "id": 4,
@@ -45,7 +51,9 @@
       "../assets/media/dresses/samira/samira_02.jpg"
     ],
     "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"]
+    "colors": ["Black", "Red", "Navy"],
+    "type": "short_dress",
+    "in_stock": false
   },
   {
     "id": 5,
@@ -57,7 +65,9 @@
       "../assets/media/dresses/samira/samira_02.jpg"
     ],
     "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"]
+    "colors": ["Black", "Red", "Navy"],
+    "type": "long_dress",
+    "in_stock": true
   },
   {
     "id": 6,
@@ -69,7 +79,9 @@
       "../assets/media/dresses/samira/samira_02.jpg"
     ],
     "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"]
+    "colors": ["Black", "Red", "Navy"],
+    "type": "long_dress",
+    "in_stock": true
   },
   {
     "id": 7,
@@ -81,7 +93,9 @@
       "../assets/media/dresses/samira/samira_02.jpg"
     ],
     "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"]
+    "colors": ["Black", "Red", "Navy"],
+    "type": "long_dress",
+    "in_stock": true
   },
   {
     "id": 8,
@@ -93,7 +107,9 @@
       "../assets/media/dresses/samira/samira_02.jpg"
     ],
     "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"]
+    "colors": ["Black", "Red", "Navy"],
+    "type": "long_dress",
+    "in_stock": true
   },
   {
     "id": 9,
@@ -105,7 +121,9 @@
       "../assets/media/dresses/samira/samira_02.jpg"
     ],
     "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"]
+    "colors": ["Black", "Red", "Navy"],
+    "type": "long_dress",
+    "in_stock": true
   },
   {
     "id": 10,
@@ -117,6 +135,8 @@
       "../assets/media/dresses/samira/samira_02.jpg"
     ],
     "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"]
+    "colors": ["Black", "Red", "Navy"],
+    "type": "long_dress",
+    "in_stock": true
   }
 ]

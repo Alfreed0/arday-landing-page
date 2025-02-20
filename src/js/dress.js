@@ -22,6 +22,16 @@ function sendWhatsAppMessage() {
   const encodedMessage = encodeURIComponent(message);
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
-  console.log("Opening WhatsApp:", whatsappURL);
+  window.open(whatsappURL, "_blank");
+}
+
+function sendHandmadeWhatsAppMessage() {
+  const phoneNumber = "593963145123";
+  const message = `Hola, estoy interesada en un vestido hecho a mano personalizado.
+  ¿Me puedes ayudar con más información?`;
+
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
   window.open(whatsappURL, "_blank");
 }
