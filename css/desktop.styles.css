@@ -1,0 +1,581 @@
+@font-face {
+  font-family: 'Nesans Semi';
+  src: url('../../assets/fonts/NesansSemiBold.woff2') format('woff2'),
+      url('../../assets/fonts/NesansSemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Carena';
+  src: url('../../assets/fonts/Carena-Regular.woff2') format('woff2'),
+      url('../../assets/fonts/Carena-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'August Script Bold free';
+  src: url('../../assets/fonts/AugustScriptBoldfree.woff2') format('woff2'),
+      url('../../assets/fonts/AugustScriptBoldfree.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Nesans Semi', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  background-color: white;
+  color: black;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Nesans Semi', sans-serif;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  rotate: 90deg;
+}
+
+.nav-toggle img {
+  width: 25px;
+  height: 25px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  gap: 1rem;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../../assets/media/backgrounds/arday_day_background.jpg') no-repeat center calc(10%)/cover;
+}
+
+.hero-message {
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-family: 'August Script Bold free', sans-serif;
+  font-size: 2rem;
+}
+
+.hero-message h1 {
+  margin: 0;
+}
+
+.scroll-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.scroll-btn img {
+  rotate: 90deg;
+}
+
+.dresses-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: max-content;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 15rem;
+  height: 30rem;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-img:hover {
+  transform: scale(1.1);
+}
+
+.ver-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-image:hover .ver-overlay {
+  opacity: 1;
+}
+
+.carousel-name,
+.carousel-price {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.carousel-name {
+  color: #333;
+  background: #f8f8f8;
+  border-top: 1px solid #ddd;
+}
+
+.carousel-price {
+  color: #fff;
+  background: #000;
+}
+
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-btn.left {
+  left: 0;
+}
+
+.carousel-btn.right {
+  right: 0;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-details {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.product-images {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+#big-image {
+  width: 25rem;
+  height: 40rem;
+  object-fit: cover;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.small-images {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.small-images img {
+  width: 3rem;
+  height: 4rem;
+  object-fit: cover;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.small-images img:hover {
+  opacity: 0.7;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+
+.product-info h2 {
+  margin: 0;
+}
+
+.product-info h3 {
+  margin: 0.5rem 0;
+}
+
+select {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  font-family: 'Nesans Semi', sans-serif;
+  font-size: 1rem;
+}
+
+#dress-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#ws-button {
+  background: #000;
+  color: white;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  font-family: 'Nesans Semi', sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.catalogue {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+
+.filters-container ul {
+  width: 100%;
+}
+
+.stock li a, .categories li a {
+  text-decoration: none;
+}
+
+.filters-container {
+  padding-left: 5rem;
+  width: 10rem;
+}
+
+.catalogue-container {
+  width: calc(100% - 15rem);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.about-us {
+  font-family: 'Carena', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #E1A0A4;
+  text-align: center;
+}
+
+.caption {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.about-us-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 30rem;
+}
+
+.about-us-section p {
+  line-height: 2;
+  font-size: 1rem;
+  text-align: start;
+}
+
+.delivery-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delivery > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.delivery, .purchase {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-bottom: 2rem;
+}
+
+.delivery div:first-child {
+  color: white;
+  background-color: #E1A0A4;
+  padding: 2rem;
+}
+
+.delivery div:first-child > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.delivery div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delivery h1 {
+  font-family: 'Carena', sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.delivery div:first-child p {
+  font-size: 1.5rem;
+}
+
+.purchase > div {
+  flex: 1;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.purchase > div:first-child {
+  align-items: flex-end;
+}
+
+.purchase > div:first-child > div:first-child {
+  position: relative;
+  width: 30rem;
+  height: 50rem;
+}
+
+.purchase > div:last-child > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10rem;
+}
+
+.purchase .image-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #665546;
+  left: -20px;
+  bottom: -20px;
+  z-index: 0;
+}
+
+.purchase img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.purchase h1 {
+  font-family: 'Carena', sans-serif;
+  font-size: 2rem;
+  color: #E8B88F;
+  margin: 0;
+}
+
+.purchase p {
+  line-height: 2;
+}
+
+.sizes, .sizes-container {
+  width: 100%;
+}
+
+.sizes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sizes-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Carena', sans-serif;
+  color: #9C816A;
+}
+
+.sizes-container div:first-child {
+  width: 40rem;
+}
+
+.sizes-container button, .handmade button {
+  background: #9C816A;
+  padding: 1rem 2rem;
+  border: 1px solid #9C816A;
+  color: white;
+  cursor: pointer;
+  font-family: 'Nesans Semi', sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background 0.1s ease-in-out;
+}
+
+.sizes-container button:hover, .handmade button:hover {
+  background: white;
+  color: #9C816A;
+}
+
+.handmade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 20rem;
+}
+
+.handmade h1, .frequent-questions h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Carena', sans-serif;
+  text-align: center;
+}
+
+.handmade p, .frequent-questions > div:first-child p {
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 2;
+}
+
+.frequent-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 20rem;
+}
+
+.frequent-questions h1 {
+  color: #BA87AF;
+  text-align: center;
+}
+
+.fq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.fq-grid h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #E1A0A4;
+  font-family: 'Carena', sans-serif;
+  text-align: center;
+}
+
+.fq-grid p {
+  line-height: 2;
+}
+
+

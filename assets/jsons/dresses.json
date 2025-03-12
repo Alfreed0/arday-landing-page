@@ -1,142 +1,517 @@
 [
   {
     "id": 1,
-    "name": "Yussani dress",
+    "name": "Anahi",
     "price": 83.00,
-    "description": "Vestido tipo corset con detalle al sesgo y tablones en el busto, diseño de espalda con tiras tejidas y una falda recta con abertura en la pierna, incluye un forro para mejor estetica.",
-    "images": [
-      "../assets/media/dresses/yussani_dress/yussani_dress_01.jpg",
-      "../assets/media/dresses/yussani_dress/yussani_dress_02.jpg"
-    ],
-    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"],
     "type": "long_dress",
-    "in_stock": true
+    "in_stock": false,
+    "description": "Vestido corset overbust con detalle al sesgo y tablones en el busto, espalda con tiras tejidas y una falda recta con abertura en la pierna.",
+    "images": [
+      "../assets/media/dresses/anahi/anahi_01.jpg",
+      "../assets/media/dresses/anahi/anahi_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Lila","Blanco","Perla"]
   },
   {
     "id": 2,
-    "name": "Samira",
-    "price": 100.00,
-    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
-    "images": [
-      "../assets/media/dresses/samira/samira_01.jpg",
-      "../assets/media/dresses/samira/samira_02.jpg"
-    ],
-    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"],
+    "name": "Anto",
+    "price": 80.00,
     "type": "long_dress",
-    "in_stock": false
+    "in_stock": false,
+    "description": "Vestido con escote en V y fajin en la cintura, falda campana con abertura cruzada",
+    "images": [
+      "../assets/media/dresses/anto/anto_01.jpg",
+      "../assets/media/dresses/anto/anto_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Lila","Blanco","Perla"]
   },
   {
     "id": 3,
-    "name": "Samira",
-    "price": 100.00,
-    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "name": "Melanie",
+    "price": 130.00,
+    "type": "long_dress",
+    "in_stock": false,
+    "description": "Vestido corset con copas, espalda tejida y tirantes amarrables, falda al tobillo de 3 capas, 2 en tul recogido en la cintura y base en podesua",
     "images": [
-      "../assets/media/dresses/samira/samira_01.jpg",
-      "../assets/media/dresses/samira/samira_02.jpg"
+      "../assets/media/dresses/melanie/melanie_01.jpg",
+      "../assets/media/dresses/melanie/melanie_02.jpg"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"],
-    "type": "short_dress",
-    "in_stock": true
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Celeste","Lila","Blanco","Perla"]
   },
   {
     "id": 4,
-    "name": "Samira",
-    "price": 100.00,
-    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
-    "images": [
-      "../assets/media/dresses/samira/samira_01.jpg",
-      "../assets/media/dresses/samira/samira_02.jpg"
-    ],
-    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"],
+    "name": "Fabiana",
+    "price": 45.00,
     "type": "short_dress",
-    "in_stock": false
+    "in_stock": false,
+    "description": "Vestido con cuello cerrado, mangas cortas, falda en A curva y 'tapas' en ella",
+    "images": [
+      "../assets/media/dresses/fabiana/fabiana_01.jpg",
+      "../assets/media/dresses/fabiana/fabiana_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Rosa","Blanco","Perla"]
   },
   {
     "id": 5,
-    "name": "Samira",
-    "price": 100.00,
-    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "name": "Mafer",
+    "price": 53.00,
+    "description": "Vestido con escote en V hasta el bajo busto, mangas cortas, falda en A curva y 'tapas' en ella",
     "images": [
-      "../assets/media/dresses/samira/samira_01.jpg",
-      "../assets/media/dresses/samira/samira_02.jpg"
+      "../assets/media/dresses/mafer/mafer_01.jpg",
+      "../assets/media/dresses/mafer/mafer_02.jpg"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"],
-    "type": "long_dress",
-    "in_stock": true
+     "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Rosa","Blanco","Perla"]
   },
   {
     "id": 6,
-    "name": "Samira",
-    "price": 100.00,
-    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "name": "Marilin",
+    "price": 55.00,
+    "type": "short_dress",
+    "in_stock": false,
+    "description": "Vestido con cuello cerrado, mangas largas, falda en A curva y 'tapas' en ella",
     "images": [
-      "../assets/media/dresses/samira/samira_01.jpg",
-      "../assets/media/dresses/samira/samira_02.jpg"
+      "../assets/media/dresses/marilin/marilin_01.jpg",
+      "../assets/media/dresses/marilin/marilin_02.jpg"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"],
-    "type": "long_dress",
-    "in_stock": true
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Rosa","Blanco","Perla"]
   },
   {
     "id": 7,
-    "name": "Samira",
-    "price": 100.00,
-    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "name": "Diana",
+    "price": 70.00,
+    "type": "short_dress",
+    "in_stock": false,
+    "description": "Vestido strapless con mangas drapeadas, lazo desmontable grande, falda A curva",
     "images": [
-      "../assets/media/dresses/samira/samira_01.jpg",
-      "../assets/media/dresses/samira/samira_02.jpg"
+      "../assets/media/dresses/diana/diana_01.jpg",
+      "../assets/media/dresses/diana/diana_02.jpg"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"],
-    "type": "long_dress",
-    "in_stock": true
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro y Blanco"]
   },
   {
     "id": 8,
-    "name": "Samira",
-    "price": 100.00,
-    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "name": "Naomi",
+    "price": 50.00,
+    "type": "short_dress",
+    "in_stock": false,
+    "description": "Vestido con cuello cerrado, falda en A curva y espalda descotada",
     "images": [
-      "../assets/media/dresses/samira/samira_01.jpg",
-      "../assets/media/dresses/samira/samira_02.jpg"
+      "../assets/media/dresses/naomi/naomi_01.jpg",
+      "../assets/media/dresses/naomi/naomi_02.jpg"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"],
-    "type": "long_dress",
-    "in_stock": true
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Rosa","Blanco","Perla"]
   },
   {
     "id": 9,
-    "name": "Samira",
-    "price": 100.00,
-    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
+    "name": "Carito",
+    "price": 50.00,
+    "type": "short_dress",
+    "in_stock": false,
+    "description": "Vestido con cuello cerrado, falda en A curva y lazos blancos en un lado",
     "images": [
-      "../assets/media/dresses/samira/samira_01.jpg",
-      "../assets/media/dresses/samira/samira_02.jpg"
+      "../assets/media/dresses/karen/karen_01.jpg",
+      "../assets/media/dresses/karen/karen_02.jpg"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"],
-    "type": "long_dress",
-    "in_stock": true
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Crema","Blanco","Perla"]
   },
   {
     "id": 10,
-    "name": "Samira",
-    "price": 100.00,
-    "description": "Vestido corset con copas y espalda tejida, falda disco con una falda de crinolina debajo (Volumen)",
-    "images": [
-      "../assets/media/dresses/samira/samira_01.jpg",
-      "../assets/media/dresses/samira/samira_02.jpg"
-    ],
-    "sizes": ["XS", "S", "M", "L", "XL", "Tailor Made"],
-    "colors": ["Black", "Red", "Navy"],
+    "name": "Dayanara",
+    "price": 105.00,
     "type": "long_dress",
-    "in_stock": true
+    "in_stock": false,
+    "description": "Vestido con escote en forma de corazón y mangas al sesgo (caidas), espalda con tiras tejidas ajustables, falda campana con abertura cruzada",
+    "images": [
+      "../assets/media/dresses/dayanara/dayanara_01.jpg",
+      "../assets/media/dresses/dayanara/dayanara_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Lila","Blanco","Perla"]
+  },
+  {
+    "id": 11,
+    "name": "Melanie glitter",
+    "price": 135.00,
+    "type": "long_dress",
+    "in_stock": false,
+    "description": "Vestido corset con copas en tul glitter, espalda tejida y mangas al sesgo (caidas), falda al tobillo de 3 capas, 2 en tul recogido en la cintura y base en podesua",
+    "images": [
+      "../assets/media/dresses/melanieglitter/melanieglitter_01.jpg",
+      "../assets/media/dresses/melanieglitter/melanieglitter_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Blanco","Perla"]
+  },
+  {
+    "id": 12,
+    "name": "Genevieve",
+    "price": 66.00,
+    "type": "short_dress",
+    "in_stock": false,
+    "description": "Vestido strapless y mangas al contorno de busto y brazos, falda corta con dos filas de vuelos, forro incluido en el valor",
+    "images": [
+      "../assets/media/dresses/genevieve/genevieve_01.jpg",
+      "../assets/media/dresses/genevieve/genevieve_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Blanco","Perla"]
+  },
+  {
+    "id": 13,
+    "name": "Rubi",
+    "price": 46.00,
+    "type": "short_dress",
+    "in_stock": false,
+    "description": "Vestido con escote cuadrado y mangas largas, falda en A con abertura delantera",
+    "images": [
+      "../assets/media/dresses/rubi/rubi_01.jpg",
+      "../assets/media/dresses/rubi/rubi_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Rosa","Blanco"]
+  },
+  {
+    "id": 14,
+    "name": "Paula",
+    "price": 69.00,
+    "type": "short_dress",
+    "in_stock": false,
+    "description": "Conjunto de blusa strapless con base en podesua y tul horizontal recogido, falda en A con base en podesua y una capa de tul recogido",
+    "images": [
+      "../assets/media/dresses/paula/paula_01.jpg",
+      "../assets/media/dresses/paula/paula_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Lila","Blanco","Perla"]
+  },
+  {
+    "id": 15,
+    "name": "Abigail",
+    "price": 80.00,
+    "type": "long_dress",
+    "in_stock": false,
+    "description": "Vestido en tecnica al sesgo completamente, escote cowl neck en el busto",
+    "images": [
+      "../assets/media/dresses/abigail/abigail_01.jpg",
+      "../assets/media/dresses/abigail/abigail_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Lila","Blanco","Perla"]
+  },
+  {
+    "id": 16,
+    "name": "Fatima",
+    "price": 93.00,
+    "type": "long_dress",
+    "in_stock": false,
+    "description": "Vestido corset con copas y escote en V pronfundo con tul transparente, espalda con tiras tejidas y una falda recta con abertura drapeada en la pierna.",
+    "images": [
+      "../assets/media/dresses/fatima/fatima_01.jpg",
+      "../assets/media/dresses/fatima/fatima_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Lila","Blanco","Perla"]
+  },
+  {
+    "id": 17,
+    "name": "Katherine",
+    "price": 135.00,
+    "type": "long_dress",
+    "in_stock": false,
+    "description": "Vestido con mangas cruzadas al busto, falda en A con tablones en la cintura para amplitud baja.",
+    "images": [
+      "../assets/media/dresses/katherine/katherine_01.jpg",
+      "../assets/media/dresses/katherine/katherine_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Blanco","Perla"]
+  },
+  {
+    "id": 18,
+    "name": "Nina",
+    "price": 92.00,
+    "type": "long_dress",
+    "in_stock": false,
+    "description": "Vestido de escote cuadrado, falda con abertura con vuelos anchos en todo el filo.",
+    "images": [
+      "../assets/media/dresses/nina/nina_01.jpg",
+      "../assets/media/dresses/nina/nina_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Lila","Blanco","Perla"]
+  },
+  {
+    "id": 19,
+    "name": "Shelly",
+    "price": 71.00,
+    "type": "long_dress",
+    "in_stock": false,
+    "description": "Vestido de escote one shoulder y cuello ancho, falda recta con abertura.",
+    "images": [
+      "../assets/media/dresses/shelly/shelly_01.jpg",
+      "../assets/media/dresses/shelly/shelly_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Lila","Blanco","Perla"]
+  },
+  {
+    "id": 20,
+    "name": "Camile",
+    "price": 110.00,
+    "type": "long_dress",
+    "in_stock": false,
+    "description": "Vestido de escote en V cruzado con fajin en la cintura, falda en A con tablones a los lados y abertura escondida.",
+    "images": [
+      "../assets/media/dresses/camile/camile_01.jpg",
+      "../assets/media/dresses/camile/camile_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Blanco","Perla"]
+  },
+  {
+    "id": 21,
+    "name": "Andrea",
+    "price": 96.00,
+    "type": "long_dress",
+    "in_stock": false,
+    "description": "Vestido corset con copas en tela, falda con corte en medio y lados recogidos.",
+    "images": [
+      "../assets/media/dresses/andrea/andrea_01.jpg",
+      "../assets/media/dresses/andrea/andrea_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Rosa","Blanco","Perla"]
+  },
+  {
+    "id": 22,
+    "name": "Day",
+    "price": 105.00,
+    "type": "long_dress",
+    "in_stock": false,
+    "description": "Vestido strapless con franja, falda con tablones amplios con volumen ligero.",
+    "images": [
+      "../assets/media/dresses/day/day_01.jpg",
+      "../assets/media/dresses/day/day_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Blanco","Perla"]
+  },
+  {
+    "id": 23,
+    "name": "Adriana",
+    "price": 110.00,
+    "type": "long_dress",
+    "in_stock": false,
+    "description": "Vestido con base tipo strapless, encima mangas cruzadas drapeadas, franja tipo fajin drapeado y falda con recogidos a la cintura.",
+    "images": [
+      "../assets/media/dresses/adriana/adriana_01.jpg",
+      "../assets/media/dresses/adriana/adriana_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Lila","Blanco","Perla"]
+  },
+  {
+    "id": 24,
+    "name": "Amatista",
+    "price": 60.00,
+    "type": "others",
+    "in_stock": false,
+    "description": "Blazer con cuello sastre, mangas largas, bolsillos con tapas y largo debajo de la cadera",
+    "images": [
+      "../assets/media/dresses/amatista/amatista_01.jpg",
+      "../assets/media/dresses/amatista/amatista_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Lila","Blanco","Perla"]
+  },
+  {
+    "id": 25,
+    "name": "Yussani",
+    "price": 45.00,
+    "type": "short_dress",
+    "in_stock": false,
+    "description": "Vestido tipo strapless con mangas cruzadas drapeadas, franja tipo fajin drapeado y falda con recogidos a la cintura.",
+    "images": [
+      "../assets/media/dresses/yussani/yussani_01.jpg",
+      "../assets/media/dresses/yussani/yussani_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Lila","Blanco","Perla"]
+  },
+  {
+    "id": 26,
+    "name": "Azucena",
+    "price": 125.00,
+    "type": "long_dress",
+    "in_stock": false,
+    "description": "Vestido con escote en forma de corazón, base con una capa de drapeado cruzado y mangas al sesgo (caidas), espalda con tiras tejidas ajustables, falda campana con abertura cruzada",
+    "images": [
+      "../assets/media/dresses/azucena/azucena_01.jpg",
+      "../assets/media/dresses/azucena/azucena_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Lila","Blanco","Perla"]
+  },
+  {
+    "id": 27,
+    "name": "Kelly",
+    "price": 70.00,
+    "type": "short_dress",
+    "in_stock": false,
+    "description": "Vestido corset overbust con corte en la cintura en V, falda corta con sobre falda delantera y en la espalda tiras tejidas ajustables, semitransparente con copas incluidas",
+    "images": [
+      "../assets/media/dresses/karen/karen_01.jpg",
+      "../assets/media/dresses/karen/karen_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": ["Negro","Blanco"]
+  },
+  {
+    "id": 28,
+    "name": "Anne",
+    "price": 95.00,
+    "type": "long_dress",
+    "in_stock": false,
+    "description": "Vestido con escote recto, falda campana, en tela full lentejuelas y forro incluido",
+    "images": [
+      "../assets/media/dresses/anne/anne_01.jpg",
+      "../assets/media/dresses/anne/anne_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Verde oscuro","Lila","Fucsia","Perla"]
+  },
+  {
+    "id": 29,
+    "name": "Green glitter",
+    "price": 78.00,
+    "type": "long_dress",
+    "in_stock": true,
+    "description": "Vestido en descuento con entrega inmediata, escote recto en el busto, espalda de tiras tejidas, falda sirena con amplitud en el filo",
+    "images": [
+      "../assets/media/dresses/green_glitter/green_glitter_01.jpg",
+      "../assets/media/dresses/green_glitter/green_glitter_02.jpg"
+    ],
+    "sizes": ["M"],
+    "colors": ["Verde oscuro"]
+  },
+  {
+    "id": 29,
+    "name": "Red glitter",
+    "price": 60.00,
+    "type": "long_dress",
+    "in_stock": true,
+    "description": "Vestido en descuento con entrega inmediata, escote one shoulder, falda recta con abertura cruzada",
+    "images": [
+      "../assets/media/dresses/red_glitter/red_glitter_01.jpg",
+      "../assets/media/dresses/red_glitter/red_glitter_02.jpg"
+    ],
+    "sizes": ["M"],
+    "colors": ["Rojo"]
+  },
+  {
+    "id": 30,
+    "name": "White set",
+    "price": 55.00,
+    "type": "other",
+    "in_stock": true,
+    "description": "Conjunto en descuento con entrega inmediata, blusa con escote en forma de corazón, espalda con tiras tejidas, falda campana corta con pretina",
+    "images": [
+      "../assets/media/dresses/white_set/white_set_01.jpg",
+      "../assets/media/dresses/white_set/white_set_02.jpg"
+    ],
+    "sizes": ["XS"],
+    "colors": ["Blanco"]
+  },
+  {
+    "id": 31,
+    "name": "Pearl dress",
+    "price": 86.00,
+    "type": "long_dress",
+    "in_stock": true,
+    "description": "Vestido en descuento con entrega inmediata, corset con copas, falda con corte en medio y lados recogidos, forro incluido para mejor acabado del color",
+    "images": [
+      "../assets/media/dresses/pearl_dress/pearl_dress_01.jpg",
+      "../assets/media/dresses/pearl_dress/pearl_dress_02.jpg"
+    ],
+    "sizes": ["S copa C"],
+    "colors": ["Perla"]
+  },
+  {
+    "id": 32,
+    "name": "Escuela de princesas",
+    "price": 45.00,
+    "type": "other",
+    "in_stock": true,
+    "description": "Conjunto inspirado en el iconico traje de la pelicula, Barbie escuela de princesas, incluye blusa blanca, chaleco, falda y corbatin",
+    "images": [
+      "../assets/media/dresses/barbie/barbie_01.jpg",
+      "../assets/media/dresses/barbie/barbie_02.jpg"
+    ],
+    "sizes": ["M"],
+    "colors": ["Multicolor"]
+  },
+  {
+    "id": 33,
+    "name": "Si yo tuviera 30",
+    "price": 37.00,
+    "type": "short_dress",
+    "in_stock": true,
+    "description": "Vestido inspirado en el iconico vestido de la pelicula, si yo tuviera 30",
+    "images": [
+      "../assets/media/dresses/13going30/13going30_01.jpg",
+      "../assets/media/dresses/13going30/13going30_02.jpg"
+    ],
+    "sizes": ["M"],
+    "colors": ["Multicolor"]
+  },
+  {
+    "id": 34,
+    "name": "Kathe",
+    "price": 36.00,
+    "type": "blouses_pant",
+    "in_stock": false,
+    "description": "Pantalon de vestir con gancho en la pretina, pinzas y basta recta",
+    "images": [
+      "../assets/media/dresses/kathe/kathe_01.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Rosa","Blanco","Perla"]
+  },
+  {
+    "id": 35,
+    "name": "Karen",
+    "price": 125.00,
+    "type": "long_dress",
+    "in_stock": false,
+    "description": "Vestido tipo corset, escote en forma de corazón, corte a la cadera en V, falda en A y una tira larga al cuello.",
+    "images": [
+      "../assets/media/dresses/karen/karen_01.jpg",
+      "../assets/media/dresses/karen/karen_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Vino","Lila","Blanco","Perla"]
+  },
+  {
+    "id": 36,
+    "name": "Maitte",
+    "price": 60.00,
+    "type": "short_dress",
+    "in_stock": false,
+    "description": "Vestido midi con cuello cerrado, drapeado de la cintura hasta el hombro",
+    "images": [
+      "../assets/media/dresses/karen/karen_01.jpg",
+      "../assets/media/dresses/karen/karen_02.jpg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "A la medida"],
+    "colors": ["Negro", "Rojo", "Azul marino","Blanco","Perla"]
   }
 ]

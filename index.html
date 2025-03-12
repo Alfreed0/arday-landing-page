@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arday | Atelier</title>
+    <link rel="stylesheet" href="./css/desktop.styles.css">
+    <link rel="stylesheet" href="./css/mobile.styles.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/carousel.js"></script>
+    <script defer src="./js/dress.js"></script>
+    <script defer src="./js/catalogue.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="../assets/media/logos/arday_black_logo.png" alt="Logo">
+        </a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <img src="../assets/media/icons/arrow_head.png" alt="Toggle arrow">
+      </button>
+      <ul class="nav-links">
+        <li><a href="#" data-page="about.html">About</a></li>
+        <li><a href="#" data-page="catalogue.html">Catálogo</a></li>
+        <li><a href="#" data-page="delivery.html">Envios</a></li>
+        <li><a href="#" data-page="sizes.html">Tallas</a></li>
+      </ul>
+    </nav>
+    
+    <main id="content">
+      <div class="hero">
+        <div class="hero-message">
+          <h1>Te ayudamos confeccionando la prenda que deseas</h1>
+        </div>
+      </div>
+      
+      <div class="carousel">
+        <button class="carousel-btn left">&lt;</button>
+        <div class="carousel-container">
+          <!-- Items will be dynamically loaded here -->
+        </div>
+        <button class="carousel-btn right">&gt;</button>
+      </div>
+
+      <div class="handmade">
+        <h1>Prendas handmade</h1>
+        <p>Recuerda que trabajamos bajo pedido y estos son algunos de nuestros trabajos anteriores, pero puedes cotizar prendas vistas en internet que desees que recreemos especialmente para ti.</p>
+        <button onclick="sendHandmadeWhatsAppMessage()">WhatsApp</button>
+      </div>
+
+      <div class="frequent-questions">
+        <div>
+          <h1>Preguntas frecuentes</h1>
+          <p>Tenemos conocimiento en patronaje y confección desde tops basicas, hasta vestidos de gala con más de 20 años, hemos cosechado la confianza y lealtad de innumerables clientes gracias a nuestras prendas, hechas a mano con materiales de calidad y gran detalle al confeccionar.</p>
+        </div>
+        <div class="fq-grid">
+          <div>
+            <h2>¿Cuanto demora un pedido?</h2>
+            <p>Nosotras trabajamos solo bajo pedido, el tiempo medio de entrega es de 8 dias habiles, significando que entre esa fecha y posteriores se estaría enviando videos de su prenda ya confeccionada para seguir con el envio.</p>
+          </div>
+          <div>
+            <h2>¿Como hago un pedido personalizado?</h2>
+            <p>Si deseas que recreemos una prenda en especial o modificar a tu gusto alguna, puedes contactarnos por whatsapp con una foto del modelo que desees, talla y sus especificaciones.</p>
+          </div>
+          <div>
+            <h2>¿A qué países envían?</h2>
+            <p>A todos! Disponemos de worldwide shipping mediante DHL, además de envíos nacionales mediante servientrega, puedes ver precios detallados y tiempo de entrega en la pagina de envios.</p>
+          </div>
+          <div>
+            <h2>¿Como es la toma de medidas?</h2>
+            <p>Es online, nosotras mandamos una lista de cuales son las medidas necesarias y un video de referencia de como debe tomarlas. Así mismo, lo ideal es que cuente con una cinta métrica y si tiene dudas al momento de tomárselas nos puede consultar.</p>
+          </div>
+        </div>
+      </div>
+        
+      
+    </main>
+    
+    <footer>
+      <p>&copy; 2025 Arday</p>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+      </div>
+    </footer>
+</body>
+</html>
