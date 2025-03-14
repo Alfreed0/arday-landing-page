@@ -101,3 +101,11 @@ footer {
   width: 100%;
   padding: 0;
 }
+
+.handmade, .frequent-questions {
+  padding: 1rem 0rem;
+}
+
+.hero-message {
+  padding: 1rem 0;
+}
