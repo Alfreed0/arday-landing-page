@@ -116,6 +116,10 @@ footer {
 .catalogue-container {
   width: 100%;
   padding: 0;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
 }
 
 .handmade, .frequent-questions {
