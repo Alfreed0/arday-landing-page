@@ -91,10 +91,26 @@ footer {
 }
 
 .filters-container {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.close-filters {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
 }
 
 .catalogue-container {
@@ -108,4 +124,71 @@ footer {
 
 .hero-message {
   padding: 1rem 0;
+}
+
+.carousel-item {
+  width: 10rem;
+  height: 20rem;
+}
+
+.filters-container {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+
+.filters-container.active {
+  display: block;
+  padding: 0;
+}
+
+.filter-toggle {
+  display: block;
+  background: #000;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.filters-container ul {
+  width: fit-content;
+}
+
+.categories li, .stock li {
+  width: fit-content;
+}
+
+.filters-container h2, .filters-container h1 {
+  width: fit-content;
+  margin-left: 1rem;
+}
+
+.product-images {
+  flex-direction: column;
+}
+
+.product-details {
+  flex-direction: column;
+}
+.small-images {
+  flex-direction: row;
+  order: 2;
+}
+
+#big-image {
+  order: 1;
+  height: 30rem;
+  width: 100%;
 }

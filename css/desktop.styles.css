@@ -342,6 +342,14 @@ select {
   width: 10rem;
 }
 
+.filter-toggle {
+  display: none;
+}
+
+.close-filters {
+  display: none;
+}
+
 .catalogue-container {
   width: calc(100% - 15rem);
   display: flex;
@@ -351,6 +359,7 @@ select {
   align-items: flex-start;
   gap: 2rem;
   padding: 2rem;
+  margin-bottom: 1rem;
 }
 
 .about-us {
@@ -578,4 +587,6 @@ select {
   line-height: 2;
 }
 
-
+.mobile-product-carousel {
+  display: none;
+}

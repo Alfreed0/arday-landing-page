@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     dresses = jsonData;
                     loadCatalogue(dresses);
                     setupFilters();
+                    setupFiltersToggle();
                   })
                   .catch(error => console.error('Error loading JSON:', error));
               }
@@ -169,3 +170,17 @@ function applyFilters() {
   loadCatalogue(filteredDresses);
 }
 
+function setupFiltersToggle() {
+  const filterToggle = document.querySelector(".filter-toggle");
+  const filtersContainer = document.querySelector(".filters-container");
+  const closeFilters = document.querySelector(".close-filters");
+
+  if (filterToggle && filtersContainer && closeFilters) {
+    filterToggle.addEventListener("click", () => {
+      filtersContainer.classList.toggle("active");
+    });
+    closeFilters.addEventListener("click", () => {
+      filtersContainer.classList.remove("active");
+    });
+  }
+}
