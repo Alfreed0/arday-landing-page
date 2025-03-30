@@ -16,8 +16,8 @@ fetch("../assets/jsons/dresses.json")
   })
   .catch((error) => console.error("Error loading JSON:", error));
 
-const visibleItems = 5;
-const itemWidth = 17;
+let visibleItems = 5;
+let itemWidth = 17;
 
 function loadCarousel(jsonData, container) {
   container.innerHTML = "";
@@ -76,9 +76,20 @@ function moveCarousel(direction) {
   restartAutoMove();
 }
 
+function updateCarouselSettings() {
+  if (window.innerWidth <= 768) {
+    visibleItems = 1;
+    itemWidth = 10.7;
+  } else {
+    visibleItems = 5;
+    itemWidth = 15.5;
+  }
+}
+
 function updateCarouselTransform(container) {
   if (!container) return;
 
+  updateCarouselSettings();
   const totalItems = dresses.length;
   let offset;
 
